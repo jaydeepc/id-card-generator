@@ -1,13 +1,15 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
 body {
-  background: #e2e1e0;
+  background: #ffffff;
   margin: 0 auto;
   padding: 12vmin 10vmin;
   max-width: 50em;
   line-height: 1.5em;
   font-family: "PT Sans";
   word-wrap: break-word;
+  justify-content: center;
+  margin: auto;
 }
 
 #id-card {
@@ -16,27 +18,39 @@ body {
   margin-right: 2em;
 }
 
+.hole {
+  height: 10mm;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.hole img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
 .id-card {
-  width: 336px;
-  height: 192px;
+  width: 55mm;
+  height: 85mm;
   background: #ffffff;
-  padding: 10px;
+  
   position: relative;
 }
 .id-card__mugshot {
-  position: absolute;
-  right: 10px;
-  width: 100px;
-  height: 100px;
-  border-left: 4px solid red;
+  position: relative;
+  width: 100%;
   background: #ffffff;
 }
 .id-card__mugshot img {
-  width: 100px;
-  height: 100px;
+  width: 55mm;
+  height: 35mm;
 }
 .id-card__logo {
-  width: 200px;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 10px;
 }
 .id-card__subject-id {
   position: absolute;
@@ -45,6 +59,7 @@ body {
   font-family: monospace;
   font-size: 14pt;
   transform: rotate(-4deg);
+  display: none;
 }
 .id-card__banner {
   height: 10pt;
@@ -62,13 +77,25 @@ body {
   top: -6px;
 }
 .id-card__details {
-  padding-top: 20px;
+  padding: 10px;
   font-size: 6pt;
   line-height: 1.5;
-  text-transform: uppercase;
   width: 60%;
-  display: inline-block;
+  /* display: inline-block; */
+  justify-content: center;
+  margin: auto;
 }
+
+.id-card__details .name {
+  font-size: 10pt;
+  font-weight: bold;
+
+}
+
+.id-card__details .name {
+  padding-top: 10px;
+}
+
 .id-card__details--short {
   float: right;
   margin-left: 30px;
@@ -77,11 +104,9 @@ body {
 .id-card__detail {
   height: 10px;
   padding-top: 4px;
-  padding-bottom: 4px;
+  padding-bottom: 3px;
 }
-.id-card__detail + .id-card__detail {
-  border-top: 1px solid #eeee;
-}
+
 .id-card__detail-label {
   color: #333;
   font-weight: bold;

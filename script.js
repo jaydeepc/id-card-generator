@@ -41,29 +41,16 @@ addEventListener('change', () => {
   textContent = md5(nameEl.value).slice(0, 8);
 });
 
-// Bind date of birth
+// Bind employee id
 bindInputToElement(
-document.getElementById('date-of-birth'),
-document.getElementById('id-card-date-of-birth'));
+document.getElementById('emp_id'),
+document.getElementById('id-card-emp-id'));
 
-
-// Bind gender
+// Bind blood group
 bindInputToElement(
-document.getElementById('gender'),
-document.getElementById('id-card-gender'));
-
-
-// Bind height
-bindInputToElement(
-document.getElementById('height'),
-document.getElementById('id-card-height'));
-
-
-// Bind weight
-bindInputToElement(
-document.getElementById('weight'),
-document.getElementById('id-card-weight'));
-
+document.getElementById('blood_group'),
+document.getElementById('id-card-blood-group'));
+  
 
 // Bind mugshot
 document.

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Bo-Segner ID Card Generator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="id-card">
+  <div class="id-card material-ui-shadow">
+
+    <!-- \\ mugshot -->
+    <!-- <div class="id-card__mugshot">
+      <img src="http://www.travelcontinuously.com/wp-content/uploads/2018/04/empty-avatar.png" id="id-card-mugshot">
+    </div> -->
+    <!-- // mugshot -->
+
+    <!-- \\ foundation logo -->
+    <div class="id-card__subject-id">
+
+    </div>
+    <div class="hole">
+      <img src="./hole.png" alt="">
+    </div>
+
+    <div class="id-card__logo logo">
+      <img src="./thoughtworks-logo.svg" />
+    </div>
+    <!-- // foundation logo -->
+
+    <div class="id-card__mugshot">
+      <img src="./placeholder.jpg" id="id-card-mugshot"/>
+
+    </div>
+
+    <!-- \\ details -->
+    <div class="id-card__details">
+      <div class="id-card__detail">
+        <span class="name" id="id-card-name">Your Name Here</span>
+      </div>
+      <div class="id-card__detail">
+        <span class="id-card__detail-label">Emp ID:</span>
+        <span class="id-card__detail-value" id="id-card-emp-id"></span>
+      </div>
+      <div class="id-card__detail">
+        <span class="id-card__detail-label">Blood group</span>
+        <span class="id-card__detail-value" id="id-card-blood-group"></span>
+      </div>
+    </div>
+    <!-- // details -->
+  </div>
+</div>
+
+<div id="id-form">
+  <div class="id-form">
+    <div class="id-form__row id-form__row--inline">
+      <div class="id-form__label">Full Name</div>
+      <div class="id-form__input">
+        <input type="text" id="name" placeholder="Name">
+      </div>
+    </div>
+
+    <div></div>
+
+    <div class="id-form__row id-form__row--inline">
+      <div class="id-form__label">Employee ID</div>
+      <div class="id-form__input">
+        <input type="text" id="emp_id" placeholder="Employee ID">
+      </div>
+    </div>
+
+    <div></div>
+
+    <div class="id-form__row id-form__row--inline">
+      <div class="id-form__label">Blood group</div>
+      <div class="id-form__input">
+        <input type="text" id="blood_group" placeholder="Blood group">
+      </div>
+    </div>
+
+    <div></div>
+    <div class="id-form__row id-form__row--inline">
+      <div class="id-form__label">Mugshot</div>
+      <div class="id-form__input">
+        <input type="file" id="mugshot" accept="image/*">
+      </div>
+    </div>
+  </div>
+</div>
+
+<button id="download-button">Download</button>
+<!-- partial -->
+  <script src='https://rawgit.com/blueimp/JavaScript-MD5/master/js/md5.min.js'></script>
+<script src='https://html2canvas.hertzen.com/dist/html2canvas.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
