@@ -8,6 +8,18 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<!-- <div class="main-logo">
+  <img src="./thoughtworks-logo.svg" />
+</div> -->
+
+<div class="page-title">
+  <h1>Generate your ID Card</h1>
+  <span>Please provide your details and upload a photo in <b>Landscape (Not Portrate)</b> resolution to generate the ID card.</span>
+  <!-- <BR></BR>
+  <span>You can use preview or any other tools to crop your photo to the above size</span> -->
+</div>
+
+<div class="main-content">
 <div id="id-card">
   <div class="id-card material-ui-shadow">
 
@@ -26,7 +38,7 @@
     </div>
 
     <div class="id-card__logo logo">
-      <img src="./thoughtworks-logo.svg" />
+      <img src="./thoughtworks-logo.png" />
     </div>
     <!-- // foundation logo -->
 
@@ -37,15 +49,16 @@
 
     <!-- \\ details -->
     <div class="id-card__details">
-      <div class="id-card__detail">
-        <span class="name" id="id-card-name">Your Name Here</span>
+      <div class="id-card__detail name">
+        <span id="id-card-name">Your Name Here</span>
       </div>
+      <div class="separator"></div>
       <div class="id-card__detail">
-        <span class="id-card__detail-label">Emp ID:</span>
+        <span class="id-card__detail-label">Emp ID : </span>
         <span class="id-card__detail-value" id="id-card-emp-id"></span>
       </div>
       <div class="id-card__detail">
-        <span class="id-card__detail-label">Blood group</span>
+        <span class="id-card__detail-label">Blood group : </span>
         <span class="id-card__detail-value" id="id-card-blood-group"></span>
       </div>
     </div>
@@ -82,18 +95,22 @@
 
     <div></div>
     <div class="id-form__row id-form__row--inline">
-      <div class="id-form__label">Mugshot</div>
+      <div class="id-form__label">Upload Photo</div>
       <div class="id-form__input">
         <input type="file" id="mugshot" accept="image/*">
       </div>
     </div>
   </div>
+
+  <button id="download-button">Download</button>
 </div>
 
-<button id="download-button">Download</button>
+
+
+</div>
 <!-- partial -->
   <script src='https://rawgit.com/blueimp/JavaScript-MD5/master/js/md5.min.js'></script>
-<script src='https://html2canvas.hertzen.com/dist/html2canvas.min.js'></script><script  src="./script.js"></script>
+<script src='/html2canvas.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
